@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "checked_url": "https://example.com/",
+  "final_url": "https://example.com/",
+  "status": 200,
+  "checked_at": "2026-11-09T18:29:40.248Z",
+  "hops": [
+    {
+      "url": "https://example.com/",
+      "status": 200
+    }
+  ],
+  "summary": {
+    "pass": 2,
+    "warn": 2,
+    "fail": 4,
+    "info": 1
+  },
+  "checks": [
+    {
+      "id": "https",
+      "name": "HTTPS",
+      "status": "pass",
+      "value": "https",
+      "note": "The page is served over https."
+    }
+  ],
+  "note": "One GET request per redirect, like a browser visit. Headers only; the page body is not read or stored. This is not a penetration test."
+}

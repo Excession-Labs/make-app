@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://penetrationtestservices.com",
+  "headers": {
+    "Accept": "application/json"
+  },
+  "response": {
+    "error": {
+      "message": "[{{statusCode}}] {{body.error}}"
+    }
+  },
+  "log": {
+    "sanitize": [
+      "request.headers.Authorization"
+    ]
+  }
+}

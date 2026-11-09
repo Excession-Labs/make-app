@@ -1,0 +1,13 @@
+[
+  {
+    "name": "apiKey",
+    "label": "Agent key",
+    "type": "password",
+    "required": true,
+    "editable": true,
+    "help": "A key that starts with exl_agent_. Get one with POST https://penetrationtestservices.com/agent/auth and the body {\"agent_name\": \"Make\"}. See https://penetrationtestservices.com/auth.md. Only the Request a Penetration Test module needs it.",
+    "validate": {
+      "pattern": "^exl_agent_[A-Za-z0-9]{32,}$"
+    }
+  }
+]

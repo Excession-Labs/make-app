@@ -1,0 +1,9 @@
+[
+  {
+    "name": "url",
+    "label": "URL",
+    "type": "url",
+    "required": true,
+    "help": "A public https or http address, for example https://example.com. Use a domain name that you own or that you may check. The service allows 12 checks a minute for each IP address."
+  }
+]

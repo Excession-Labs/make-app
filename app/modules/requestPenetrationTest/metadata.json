@@ -1,0 +1,7 @@
+{
+  "name": "requestPenetrationTest",
+  "label": "Request a Penetration Test",
+  "type": "action",
+  "connection": "excession-labs-agent-key",
+  "description": "Sends a penetration test request to Excession Labs for a person who asked for it. Excession Labs replies to that person by email. Testing starts only after a written scope and written authorization from the system owner."
+}

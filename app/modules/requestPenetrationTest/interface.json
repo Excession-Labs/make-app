@@ -1,0 +1,17 @@
+[
+  {
+    "name": "ok",
+    "type": "boolean",
+    "label": "OK"
+  },
+  {
+    "name": "reference",
+    "type": "text",
+    "label": "Reference"
+  },
+  {
+    "name": "next_steps",
+    "type": "text",
+    "label": "Next steps"
+  }
+]

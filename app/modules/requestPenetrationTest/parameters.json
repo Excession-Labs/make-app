@@ -1,0 +1,130 @@
+[
+  {
+    "name": "name",
+    "label": "Name of the person",
+    "type": "text",
+    "required": true,
+    "help": "The person who asked for the test."
+  },
+  {
+    "name": "email",
+    "label": "Email of the person",
+    "type": "email",
+    "required": true,
+    "help": "Excession Labs replies to this address. The service accepts 3 requests a day for each address and 5 a day for each key."
+  },
+  {
+    "name": "company",
+    "label": "Company",
+    "type": "text"
+  },
+  {
+    "name": "website",
+    "label": "Website",
+    "type": "url"
+  },
+  {
+    "name": "test_type",
+    "label": "Test type",
+    "type": "select",
+    "required": true,
+    "options": [
+      {
+        "label": "Web application",
+        "value": "web_app"
+      },
+      {
+        "label": "API",
+        "value": "api"
+      },
+      {
+        "label": "Multi-tenant SaaS",
+        "value": "saas_multi_tenant"
+      },
+      {
+        "label": "AI application",
+        "value": "ai_application"
+      },
+      {
+        "label": "Other or not sure",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "name": "targets",
+    "label": "Targets",
+    "type": "array",
+    "required": true,
+    "spec": {
+      "type": "text",
+      "label": "Target"
+    },
+    "validate": {
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "help": "URLs, API base URLs or a short description of each system to test. Up to 10. Do not add passwords, keys or tokens."
+  },
+  {
+    "name": "reason",
+    "label": "Reason",
+    "type": "select",
+    "options": [
+      {
+        "label": "Not stated",
+        "value": ""
+      },
+      {
+        "label": "A customer asked for a pentest report",
+        "value": "customer_request"
+      },
+      {
+        "label": "Audit or compliance evidence",
+        "value": "compliance"
+      },
+      {
+        "label": "Before a launch or major release",
+        "value": "launch"
+      },
+      {
+        "label": "Routine testing",
+        "value": "routine"
+      },
+      {
+        "label": "After an incident or a report",
+        "value": "incident"
+      },
+      {
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "name": "timeline",
+    "label": "Timeline",
+    "type": "text",
+    "help": "Free text, for example 'before the March release'."
+  },
+  {
+    "name": "notes",
+    "label": "Notes",
+    "type": "text",
+    "multiline": true,
+    "help": "Do not add passwords, keys or customer data. Access is agreed later through a safe channel."
+  },
+  {
+    "name": "person_consent",
+    "label": "The person asked for this request and agrees that Excession Labs may email them",
+    "type": "boolean",
+    "required": true
+  },
+  {
+    "name": "authorized",
+    "label": "The person owns these systems or may arrange a test of them",
+    "type": "boolean",
+    "required": true,
+    "help": "Testing still needs written authorization from the system owner later."
+  }
+]

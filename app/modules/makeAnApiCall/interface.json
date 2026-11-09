@@ -1,0 +1,17 @@
+[
+  {
+    "name": "status",
+    "type": "uinteger",
+    "label": "Status"
+  },
+  {
+    "name": "headers",
+    "type": "collection",
+    "label": "Headers"
+  },
+  {
+    "name": "body",
+    "type": "any",
+    "label": "Body"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "makeAnApiCall",
+  "label": "Make an API Call",
+  "type": "universal",
+  "connection": "excession-labs-agent-key",
+  "description": "Performs an arbitrary authorized call to the penetrationtestservices.com API. The URL is a path on that host."
+}

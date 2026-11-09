@@ -1,0 +1,17 @@
+{
+  "url": "/api/check-headers",
+  "method": "GET",
+  "qs": {
+    "url": "{{parameters.url}}"
+  },
+  "response": {
+    "valid": {
+      "condition": "{{body.ok === true}}",
+      "message": "{{body.error}}"
+    },
+    "output": "{{body}}",
+    "error": {
+      "message": "[{{statusCode}}] {{body.error}}"
+    }
+  }
+}

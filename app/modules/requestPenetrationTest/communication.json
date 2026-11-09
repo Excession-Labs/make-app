@@ -1,0 +1,36 @@
+{
+  "url": "/api/agent/request",
+  "method": "POST",
+  "headers": {
+    "Authorization": "Bearer {{connection.apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "name": "{{parameters.name}}",
+    "email": "{{parameters.email}}",
+    "company": "{{parameters.company}}",
+    "website": "{{parameters.website}}",
+    "test_type": "{{parameters.test_type}}",
+    "targets": "{{parameters.targets}}",
+    "reason": "{{parameters.reason}}",
+    "timeline": "{{parameters.timeline}}",
+    "notes": "{{parameters.notes}}",
+    "person_consent": "{{parameters.person_consent}}",
+    "authorized": "{{parameters.authorized}}"
+  },
+  "response": {
+    "valid": {
+      "condition": "{{body.ok === true}}",
+      "message": "{{body.error}}"
+    },
+    "output": "{{body}}",
+    "error": {
+      "message": "[{{statusCode}}] {{body.error}} {{body.errors.name}} {{body.errors.email}} {{body.errors.test_type}} {{body.errors.targets}} {{body.errors.reason}} {{body.errors.person_consent}} {{body.errors.authorized}} {{body.errors.notes}}"
+    }
+  },
+  "log": {
+    "sanitize": [
+      "request.headers.Authorization"
+    ]
+  }
+}

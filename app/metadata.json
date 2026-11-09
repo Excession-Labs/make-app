@@ -1,0 +1,8 @@
+{
+  "name": "excession-labs-security",
+  "label": "Excession Labs Security",
+  "version": 1,
+  "theme": "#1a1a1a",
+  "language": "en",
+  "description": "Check the security headers of a site, find penetration testing providers in a sourced dataset, and send a penetration test request to Excession Labs."
+}

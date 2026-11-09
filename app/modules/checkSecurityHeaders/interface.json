@@ -1,0 +1,108 @@
+[
+  {
+    "name": "ok",
+    "type": "boolean",
+    "label": "OK"
+  },
+  {
+    "name": "checked_url",
+    "type": "text",
+    "label": "Checked URL"
+  },
+  {
+    "name": "final_url",
+    "type": "text",
+    "label": "Final URL after redirects"
+  },
+  {
+    "name": "status",
+    "type": "uinteger",
+    "label": "HTTP status"
+  },
+  {
+    "name": "checked_at",
+    "type": "date",
+    "label": "Checked at"
+  },
+  {
+    "name": "hops",
+    "type": "array",
+    "label": "Redirect hops",
+    "spec": [
+      {
+        "name": "url",
+        "type": "text",
+        "label": "URL"
+      },
+      {
+        "name": "status",
+        "type": "uinteger",
+        "label": "Status"
+      }
+    ]
+  },
+  {
+    "name": "summary",
+    "type": "collection",
+    "label": "Summary",
+    "spec": [
+      {
+        "name": "pass",
+        "type": "uinteger",
+        "label": "Pass"
+      },
+      {
+        "name": "warn",
+        "type": "uinteger",
+        "label": "Warn"
+      },
+      {
+        "name": "fail",
+        "type": "uinteger",
+        "label": "Fail"
+      },
+      {
+        "name": "info",
+        "type": "uinteger",
+        "label": "Info"
+      }
+    ]
+  },
+  {
+    "name": "checks",
+    "type": "array",
+    "label": "Checks",
+    "spec": [
+      {
+        "name": "id",
+        "type": "text",
+        "label": "ID"
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "label": "Name"
+      },
+      {
+        "name": "status",
+        "type": "text",
+        "label": "Status (pass, warn, fail, info)"
+      },
+      {
+        "name": "value",
+        "type": "text",
+        "label": "Value"
+      },
+      {
+        "name": "note",
+        "type": "text",
+        "label": "Note"
+      }
+    ]
+  },
+  {
+    "name": "note",
+    "type": "text",
+    "label": "Note"
+  }
+]

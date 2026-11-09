@@ -1,0 +1,7 @@
+{
+  "name": "checkSecurityHeaders",
+  "label": "Check Security Headers",
+  "type": "action",
+  "connection": "excession-labs-agent-key",
+  "description": "Reads the HTTP response headers of a public web page and grades HSTS, CSP, framing, nosniff, referrer, permissions, COOP and cookie leaks. Headers only. This is not a penetration test."
+}

@@ -1,0 +1,24 @@
+{
+  "url": "{{parameters.url}}",
+  "method": "{{parameters.method}}",
+  "headers": {
+    "Authorization": "Bearer {{connection.apiKey}}"
+  },
+  "qs": "{{toCollection(parameters.qs; \"key\"; \"value\")}}",
+  "body": "{{parameters.body}}",
+  "response": {
+    "output": {
+      "status": "{{statusCode}}",
+      "headers": "{{headers}}",
+      "body": "{{body}}"
+    },
+    "error": {
+      "message": "[{{statusCode}}] {{body.error}}"
+    }
+  },
+  "log": {
+    "sanitize": [
+      "request.headers.Authorization"
+    ]
+  }
+}

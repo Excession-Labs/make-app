@@ -63,4 +63,4 @@ The service has no read-only call that checks an agent key. The connection check
 
 ## Licence
 
-MIT. The provider dataset from PentestCompare is CC BY 4.0.
+MIT. The provider dataset from PentestCompare is MIT.
